@@ -4,7 +4,7 @@
 Mint has a rule that needed to be removed:
 
 ```sh
-https://snapcraft.io/docs/installing-snap-on-linux-mint
+sudo rm /etc/apt/preferences.d/nosnap.pref
 ```
 
 After this you can simply do:
