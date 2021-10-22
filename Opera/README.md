@@ -27,7 +27,9 @@ sudo mkdir /usr/lib/x86_64-linux-gnu/opera/lib_extra
 After this you gona really create the symlink:
 
 ```sh
-sudo ln -s /snap/chromium-ffmpeg/current/chromium-ffmpeg-98516/chromium-ffmpeg/libffmpeg.so /usr/lib/x86_64-linux-gnu/opera/lib_extra
+sudo cp /snap/chromium-ffmpeg/current/chromium-ffmpeg-104195/chromium-ffmpeg/libffmpeg.so /usr/lib/x86_64-linux-gnu/opera/lib_extra
+sudo cp /opt/google/chrome/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so /opt/google/chrome/libwidevinecdm.so
+
 ```
 
 You really need to check if the directory chromium-ffmpeg-98516 is inside /snap/chromium-ffmpeg/current/ to make sure that is working.
